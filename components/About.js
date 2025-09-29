@@ -73,7 +73,7 @@ function About() {
               <div className="relative">
                 <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    src="trickle\assets\Ujjwal-profile.png"
                     alt="Ujjwal Bansal - Profile"
                     className="w-full h-full object-cover"
                   />

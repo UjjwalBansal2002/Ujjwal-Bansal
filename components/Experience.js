@@ -7,7 +7,7 @@ function Experience() {
         organization: "Ducat Institute",
         period: "2023 - 2024",
         description: "Intensive full-stack web development program covering modern technologies including MERN stack, Java, and industry best practices.",
-        skills: ["MERN Stack", "Java", "Spring Boot", "Database Design"]
+        skills: ["MERN Stack", "Java", "Tailwind CSS", "MongoDB"]
       },
       {
         type: "Project",

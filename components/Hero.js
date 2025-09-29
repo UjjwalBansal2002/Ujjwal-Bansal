@@ -52,14 +52,15 @@ function Hero() {
 
             <div className="mt-16 flex justify-center space-x-6">
               <a
-                href="mailto:ujjwalbansal@example.com"
+                href="mailto:bansalujjwal2002@gmail.com"
                 className="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
                 aria-label="Email"
+                target="_blank"
               >
                 <div className="icon-mail text-2xl"></div>
               </a>
               <a
-                href="https://linkedin.com/in/ujjwalbansal"
+                href="https://www.linkedin.com/in/ujjwalbansal1810"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
@@ -68,7 +69,7 @@ function Hero() {
                 <div className="icon-linkedin text-2xl"></div>
               </a>
               <a
-                href="https://github.com/ujjwalbansal"
+                href="https://github.com/UjjwalBansal2002"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"

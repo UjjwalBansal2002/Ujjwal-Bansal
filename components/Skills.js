@@ -5,33 +5,36 @@ function Skills() {
         title: "Frontend Development",
         icon: "monitor",
         skills: [
-          { name: "React.js", level: 95 },
-          { name: "Next.js 14", level: 90 },
-          { name: "JavaScript", level: 92 },
-          { name: "Tailwind CSS", level: 88 },
-          { name: "HTML/CSS", level: 95 }
+          { name: "React.js"},
+          { name: "Next.js 14" },
+          { name: "JavaScript (ES6+)" },
+          { name: "Tailwind CSS" },
+          { name: "Bootstrap 5" },
+          { name: "HTML/CSS" }
         ]
       },
       {
         title: "Backend Development",
         icon: "server",
         skills: [
-          { name: "Java", level: 85 },
-          { name: "Spring Framework", level: 80 },
-          { name: "Node.js", level: 88 },
-          { name: "API Development", level: 90 },
-          { name: "MongoDB", level: 85 }
+          { name: "Java"},
+          { name: "Node.js"},
+          { name: "Express.js" },
+          { name: "MYSQL"},
+          { name: "MongoDB"},
+          { name: "REST API Development"}
         ]
       },
       {
         title: "Tools & Technologies",
         icon: "wrench",
         skills: [
-          { name: "Git/GitHub", level: 90 },
-          { name: "C Programming", level: 75 },
-          { name: "Express.js", level: 85 },
-          { name: "REST APIs", level: 88 },
-          { name: "Database Design", level: 82 }
+          { name: "Git/GitHub" },
+          { name: "C Programming" },
+          { name: "JWT Authentication" },
+          { name: "AI Tools" },
+          { name: "Postman" },
+          { name: "VS Code" }
         ]
       }
     ];
@@ -73,7 +76,7 @@ function Skills() {
                           {skill.name}
                         </span>
                         <span className="text-sm text-[var(--text-secondary)]">
-                          {skill.level}%
+                          {skill.level}
                         </span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2">

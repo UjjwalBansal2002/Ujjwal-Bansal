@@ -7,8 +7,8 @@ function Projects() {
         description: "A modern news app built with React that fetches real-time news from various sources with category filtering and search functionality.",
         image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         tech: ["React", "JavaScript", "REST API", "CSS3"],
-        github: "https://github.com/ujjwalbansal/news-app",
-        demo: "https://news-app-demo.vercel.app",
+        github: "https://github.com/UjjwalBansal2002/NewsMonkey-React",
+        demo: "https://news-monkey-react-alpha.vercel.app/",
         featured: true
       },
       {
@@ -17,8 +17,8 @@ function Projects() {
         description: "Flask-based web application for downloading YouTube videos in various formats with a clean, intuitive interface.",
         image: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         tech: ["Flask", "Python", "JavaScript", "Bootstrap"],
-        github: "https://github.com/ujjwalbansal/yt-downloader",
-        demo: "https://yt-downloader-demo.herokuapp.com"
+        github: "https://github.com/UjjwalBansal2002",
+        demo: "https://ujjwal-bansal.vercel.app/"
       },
       {
         id: 3,
@@ -26,8 +26,8 @@ function Projects() {
         description: "Comprehensive collection of RESTful APIs built with Node.js and Express, featuring authentication, CRUD operations, and documentation.",
         image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         tech: ["Node.js", "Express", "MongoDB", "JWT"],
-        github: "https://github.com/ujjwalbansal/api-collection",
-        demo: "https://api-docs.postman.com/ujjwal"
+        github: "https://github.com/UjjwalBansal2002",
+        demo: "https://ujjwal-bansal.vercel.app/"
       },
       {
         id: 4,
@@ -35,8 +35,8 @@ function Projects() {
         description: "Full-stack e-commerce solution with user authentication, shopping cart, payment integration, and admin dashboard.",
         image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         tech: ["MERN Stack", "Stripe", "JWT", "Tailwind"],
-        github: "https://github.com/ujjwalbansal/ecommerce",
-        demo: "https://ecommerce-demo.vercel.app",
+        github: "https://github.com/UjjwalBansal2002",
+        demo: "https://ujjwal-bansal.vercel.app/",
         featured: true
       },
       {
@@ -45,8 +45,8 @@ function Projects() {
         description: "Collaborative task management application with real-time updates, team collaboration features, and progress tracking.",
         image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         tech: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
-        github: "https://github.com/ujjwalbansal/task-manager",
-        demo: "https://taskmanager-demo.vercel.app"
+        github: "https://github.com/UjjwalBansal2002",
+        demo: "https://ujjwal-bansal.vercel.app/"
       },
       {
         id: 6,
@@ -54,8 +54,8 @@ function Projects() {
         description: "Responsive portfolio website showcasing modern design principles with dark/light mode toggle and smooth animations.",
         image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         tech: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
-        github: "https://github.com/ujjwalbansal/portfolio",
-        demo: "https://ujjwalbansal.dev"
+        github: "https://github.com/UjjwalBansal2002/Ujjwal-Bansal",
+        demo: "https://ujjwal-bansal.vercel.app"
       }
     ];
 

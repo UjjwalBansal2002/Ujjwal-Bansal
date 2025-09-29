@@ -87,7 +87,7 @@ function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[var(--text-primary)]">Email</h4>
-                    <p className="text-[var(--text-secondary)]">ujjwalbansal@example.com</p>
+                    <p className="text-[var(--text-secondary)]">bansalujjwal2002@gmail.com</p>
                   </div>
                 </div>
 
@@ -97,7 +97,7 @@ function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[var(--text-primary)]">LinkedIn</h4>
-                    <p className="text-[var(--text-secondary)]">linkedin.com/in/ujjwalbansal</p>
+                    <p className="text-[var(--text-secondary)]">linkedin.com/in/ujjwalbansal1810</p>
                   </div>
                 </div>
 
@@ -107,14 +107,14 @@ function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[var(--text-primary)]">GitHub</h4>
-                    <p className="text-[var(--text-secondary)]">github.com/ujjwalbansal</p>
+                    <p className="text-[var(--text-secondary)]">github.com/ujjwalbansal2002</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8">
                 <a
-                  href="/resume.pdf"
+                  href="trickle\assets\Ujjwal_Resume_.pdf"
                   download="Ujjwal_Bansal_Resume.pdf"
                   className="inline-flex items-center gap-2 btn-primary"
                 >
