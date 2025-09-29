@@ -10,9 +10,9 @@ function Footer() {
     ];
 
     const socialLinks = [
-      { name: 'GitHub', href: 'https://github.com/ujjwalbansal', icon: 'github' },
-      { name: 'LinkedIn', href: 'https://linkedin.com/in/ujjwalbansal', icon: 'linkedin' },
-      { name: 'Email', href: 'mailto:ujjwalbansal@example.com', icon: 'mail' }
+      { name: 'GitHub', href: 'https://github.com/ujjwalbansal2002', icon: 'github' },
+      { name: 'LinkedIn', href: 'https://linkedin.com/in/ujjwalbansal1810', icon: 'linkedin' },
+      { name: 'Email', href: 'mailto:bansalujjwal2002@gmail.com', icon: 'mail' }
     ];
 
     return (
