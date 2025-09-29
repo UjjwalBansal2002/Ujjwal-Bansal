@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ujjwal Bansal - Web Developer | Java | MERN | Next.js</title>
+    <meta name="description" content="Professional portfolio of Ujjwal Bansal - Full Stack Web Developer specializing in Java, MERN Stack, and Next.js development">
+    <meta name="keywords" content="Ujjwal Bansal, Web Developer, Java, MERN Stack, Next.js, Full Stack Developer, Portfolio">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ujjwal Bansal - Web Developer Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing web development projects and skills">
+    
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Ujjwal Bansal - Web Developer Portfolio">
+    <meta name="twitter:description" content="Professional portfolio showcasing web development projects and skills">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #1e293b;
+            --accent-color: #06b6d4;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --border-color: #e5e7eb;
+        }
+        
+        [data-theme="dark"] {
+            --primary-color: #60a5fa;
+            --secondary-color: #f1f5f9;
+            --accent-color: #22d3ee;
+            --text-primary: #f9fafb;
+            --text-secondary: #d1d5db;
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --border-color: #374151;
+        }
+    }
+
+    @layer base {
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+        }
+        
+        .btn-secondary {
+            @apply px-6 py-3 rounded-lg font-semibold border-2 transition-all duration-300;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            background-color: transparent;
+        }
+        
+        .glass-card {
+            @apply backdrop-blur-sm rounded-xl p-6 transition-all duration-300 hover:shadow-xl;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .section-padding {
+            @apply py-20 px-4 sm:px-6 lg:px-8;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+
+    @layer utilities {
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Navbar.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Skills.js"></script>
+    <script type="text/babel" src="components/Projects.js"></script>
+    <script type="text/babel" src="components/Experience.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/ThemeToggle.js"></script>
+    <script type="text/babel" src="utils/scrollUtils.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

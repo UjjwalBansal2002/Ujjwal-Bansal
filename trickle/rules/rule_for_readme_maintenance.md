@@ -1,0 +1,11 @@
+When updating the portfolio project
+- Always check if the README.md needs updates after making changes
+- Update the README when adding new features, sections, or significant modifications
+- Keep the tech stack information current
+- Update project structure documentation if files are added or removed
+- Refresh feature list when new functionality is implemented
+- Maintain accurate browser support information
+- Update maintenance notes with any new requirements or processes
+- Always ensure proper color contrast between text/icons and their background colors
+- Never use the same color for both icon and background (e.g., both using var(--primary-color))
+- Use specific Tailwind color classes for better visibility when needed
