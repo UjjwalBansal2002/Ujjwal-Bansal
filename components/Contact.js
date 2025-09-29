@@ -1,3 +1,4 @@
+
 function Contact() {
   try {
     const [formData, setFormData] = React.useState({
@@ -15,15 +16,45 @@ function Contact() {
       });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
       e.preventDefault();
       setIsSubmitting(true);
-      
-      setTimeout(() => {
-        alert('Thank you for your message! I will get back to you soon.');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-        setIsSubmitting(false);
-      }, 1000);
+
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      };
+
+      fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+  
+
+        body: JSON.stringify({
+          service_id: "service_3mnej3u",   // from EmailJS
+          template_id: "template_w0lm5je", // from EmailJS
+          user_id: "der2jzpMcWp90Rydd",      // from EmailJS
+          template_params: templateParams,
+        }),
+      })
+        .then((res) => {
+          if (res.ok) {
+            alert("✅ Message sent successfully!");
+            setFormData({ name: "", email: "", subject: "", message: "" });
+          } else {
+            alert("❌ Failed to send message. Please try again.");
+          }
+          setIsSubmitting(false);
+        })
+        .catch((err) => {
+          console.error("EmailJS error:", err);
+          alert("❌ Something went wrong.");
+          setIsSubmitting(false);
+        });
     };
 
     return (
@@ -48,7 +79,7 @@ function Contact() {
               <h3 className="text-2xl font-bold text-[var(--text-primary)] mb-6">
                 Let's Work Together
               </h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
@@ -59,7 +90,7 @@ function Contact() {
                     <p className="text-[var(--text-secondary)]">ujjwalbansal@example.com</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-lg bg-cyan-100 flex items-center justify-center">
                     <div className="icon-linkedin text-xl text-cyan-600"></div>
@@ -69,7 +100,7 @@ function Contact() {
                     <p className="text-[var(--text-secondary)]">linkedin.com/in/ujjwalbansal</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center">
                     <div className="icon-github text-xl text-gray-700"></div>
@@ -109,7 +140,7 @@ function Contact() {
                     placeholder="Your full name"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-[var(--text-primary)] mb-2">
                     Email *
@@ -124,7 +155,7 @@ function Contact() {
                     placeholder="your.email@example.com"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-[var(--text-primary)] mb-2">
                     Subject
@@ -138,7 +169,7 @@ function Contact() {
                     placeholder="What's this about?"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-[var(--text-primary)] mb-2">
                     Message *
@@ -153,7 +184,7 @@ function Contact() {
                     placeholder="Tell me about your project or idea..."
                   ></textarea>
                 </div>
-                
+
                 <button
                   type="submit"
                   disabled={isSubmitting}
